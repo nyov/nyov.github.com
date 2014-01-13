@@ -1,49 +1,77 @@
 @charset "UTF-8";
 
+@import url('conditional.css');
+
 html, body {
 	height:100%;
+	font-size:16px;
 }
-body#nyov-github-com {
+body#nyov-github-com,
+body#nyov-github-io {
 	margin:0;
 	padding:0;
 	text-align:center;
 	background:#000;
 	color:#00e36e;
-	font-family: Georgia, "Lucida Grande", sans-serif;
-	font-size: 0.9em;
-}
-#viewport {
-	position:relative;
-	margin:0 auto;
-	padding:0;
-	text-align:center;
-	width:auto;
-	min-height:100%;
-	height:100%;
-	overflow:hidden;
-	text-align:left;
-}
-#page {
-	position:absolute;
-	margin:0;
-	width:auto;
-	top:10px;
-	bottom:10px;
-	left:10px;
-	right:10px;
-	text-align:center;
+	font-family:"Vollkorn", "Linux Libertine O", "CMU Serif", "Liberation Serif", "Georgia", georgia, serif;
 	font-size:1em;
+	overflow:hidden;
 }
-#back {
-	margin:0 auto;
+#skybox {
+	margin:0;
+	height:0;
+	width:0;
 	position:relative;
 	top:50%;
-	margin-top:-67px;
-	width:135px;
-	height:135px;
+	left:50%;
 }
-a:link { color: #036; text-decoration: none; }
-a:visited { color: #036; text-decoration: none; }
+#skybox #back {
+	position:relative;
+	margin:0;
+	padding:0;
+	display:block;
+	width:1920px;
+	height:1200px;
+	left:-960px;
+	top:-600px;
+}
+#back p {
+	position:relative;
+	display:block;
+	top:50%;
+	height:100px;
+	margin:0;
+	padding:0;
+	margin-top:-50px;
+
+	font-size:1.6em;
+	font-size:1.4vw;
+	font-style:italic;
+	font-weight:bold;
+}
+
+#back q {
+	display:block;
+	width:900px;
+	margin:0 auto;
+	padding:0;
+	text-shadow:0 0 15px #177177;
+}
+#back cite {
+	font-size:0.6em;
+	font-weight: normal;
+}
+#back cite span {
+	font-size:0.6em;
+	vertical-align:middle;
+}
+#back sup {
+	font-size:0.2em;
+	font-weight: normal;
+}
+
+a:link { color: #00e36e; text-decoration: none; }
+a:visited { color: #00e36e; text-decoration: none; }
 a:hover { color: #f90; text-decoration: none; }
 a:active { color: #f90; text-decoration: none; }
 ::-moz-selection {
@@ -53,4 +81,29 @@ a:active { color: #f90; text-decoration: none; }
 ::selection {
 	background:#000;
 	color:#f60;
+}
+
+@font-face {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url('../fonts/Vollkorn-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Vollkorn Bold'), local('Vollkorn-Bold'), url('../fonts/Vollkorn-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Vollkorn';
+	font-style: italic;
+	font-weight: normal;
+	src: local('Vollkorn Italic'), local('Vollkorn-Italic'), url('../fonts/Vollkorn-Italic.woff') format('woff');
+}
+@font-face {
+	font-family: 'Vollkorn';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Vollkorn Bold Italic'), local('Vollkorn-BoldItalic'), url('../fonts/Vollkorn-BoldItalic.woff') format('woff');
 }
