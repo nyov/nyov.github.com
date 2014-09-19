@@ -16,6 +16,11 @@ body#nyov-github-io {
 	font-family:"Vollkorn", "Linux Libertine O", "CMU Serif", "Liberation Serif", "Georgia", georgia, serif;
 	font-size:1em;
 	overflow:hidden;
+	background:#000 url('../gfx/cloud.png') no-repeat center;
+	-webkit-background-size:100%;
+	background-size:100%;
+	-webkit-background-size:cover;
+	background-size:cover;
 }
 #skybox {
 	margin:0;
@@ -37,15 +42,14 @@ body#nyov-github-io {
 }
 #back p {
 	position:relative;
-	display:block;
 	top:50%;
-	height:100px;
+	height:auto;
 	margin:0;
 	padding:0;
 	margin-top:-50px;
 
 	font-size:1.6em;
-	font-size:1.4vw;
+/*	font-size:1.6vw;*/
 	font-style:italic;
 	font-weight:bold;
 }
@@ -61,6 +65,7 @@ body#nyov-github-io {
 	font-size:0.6em;
 	font-weight: normal;
 }
+#back span,
 #back cite span {
 	font-size:0.6em;
 	vertical-align:middle;
@@ -69,17 +74,27 @@ body#nyov-github-io {
 	font-size:0.2em;
 	font-weight: normal;
 }
+#back p#credits {
+	position:relative;
+	top:50%;
+	height:auto;
+	width:auto;
+	margin:0;
+	padding:50px 0 0 0;
 
-a:link { color: #00e36e; text-decoration: none; }
-a:visited { color: #00e36e; text-decoration: none; }
+	font-size:.6em;
+	font-style:normal;
+	font-weight: normal;
+}
+
+a:link { color: #aae36e; text-decoration: none; }
+a:visited { color: #aae36e; text-decoration: none; }
 a:hover { color: #f90; text-decoration: none; }
 a:active { color: #f90; text-decoration: none; }
 ::-moz-selection {
-	background:#000;
 	color:#f60;
 }
 ::selection {
-	background:#000;
 	color:#f60;
 }
 
@@ -87,23 +102,27 @@ a:active { color: #f90; text-decoration: none; }
 	font-family: 'Vollkorn';
 	font-style: normal;
 	font-weight: normal;
+	font-stretch: normal;
 	src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url('../fonts/Vollkorn-Regular.woff') format('woff');
 }
 @font-face {
 	font-family: 'Vollkorn';
 	font-style: normal;
 	font-weight: bold;
+	font-stretch: normal;
 	src: local('Vollkorn Bold'), local('Vollkorn-Bold'), url('../fonts/Vollkorn-Bold.woff') format('woff');
 }
 @font-face {
 	font-family: 'Vollkorn';
 	font-style: italic;
 	font-weight: normal;
+	font-stretch: normal;
 	src: local('Vollkorn Italic'), local('Vollkorn-Italic'), url('../fonts/Vollkorn-Italic.woff') format('woff');
 }
 @font-face {
 	font-family: 'Vollkorn';
 	font-style: italic;
 	font-weight: bold;
+	font-stretch: normal;
 	src: local('Vollkorn Bold Italic'), local('Vollkorn-BoldItalic'), url('../fonts/Vollkorn-BoldItalic.woff') format('woff');
 }
